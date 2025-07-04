@@ -8,5 +8,6 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
+      - ./.flake8:/app/.flake8
     command: >
       sh -c "python manage.py runserver 0.0.0.0:8000"
